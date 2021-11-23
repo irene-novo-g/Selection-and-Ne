@@ -1,0 +1,17 @@
+
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c2.5_10_10.0_BS_del5_sgamma/
+qsub -cwd -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 21
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_7.5_BS_del5_sgamma/
+qsub -cwd -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 22
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_8.0_BS_del5_sgamma/
+qsub -cwd -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 23
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_8.5_BS_del5_sgamma/
+qsub -cwd -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 24
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_9.0_BS_del5_sgamma/
+qsub -cwd -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 25
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_9.5_BS_del5_sgamma/
+qsub -cwd -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 26
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_10.0_BS_del5_sgamma/
+qsub -cwd -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 27
+
+
