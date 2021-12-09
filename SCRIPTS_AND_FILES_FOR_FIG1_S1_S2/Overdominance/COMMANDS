@@ -1,0 +1,11 @@
+
+qsub script_SLIM3_BOpin.sh slim3INPUT100Mb_N1000_c10_10.0_HH_ben0.01 1000 0.01 100 101
+qsub script_SLIM3_BOpin.sh slim3INPUT100Mb_N1000_c2.5_10_10.0_HH_ben0.01 1000 0.025 100 102
+qsub script_SLIM3_BOpin.sh slim3INPUT100Mb_N1000_c10_7.5_HH_ben0.01 1000 5.0 100 103
+qsub script_SLIM3_BOpin.sh slim3INPUT100Mb_N1000_c10_8.0_HH_ben0.01 1000 1.0 100 104
+qsub script_SLIM3_BOpin.sh slim3INPUT100Mb_N1000_c10_8.5_HH_ben0.01 1000 0.5 100 105
+qsub script_SLIM3_BOpin.sh slim3INPUT100Mb_N1000_c10_9.0_HH_ben0.01 1000 0.1 100 106
+qsub script_SLIM3_BOpin.sh slim3INPUT100Mb_N1000_c10_9.5_HH_ben0.01 1000 0.05 100 107
+
+
+

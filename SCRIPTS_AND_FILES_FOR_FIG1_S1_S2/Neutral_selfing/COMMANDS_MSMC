@@ -1,0 +1,16 @@
+
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c2.5_10_10.0_neu/
+qsub -cwd script_WMSMC.sh 100 31
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_7.5_neu/
+qsub -cwd script_WMSMC.sh 100 32
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_8.0_neu/
+qsub -cwd script_WMSMC.sh 100 33
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_8.5_neu/
+qsub -cwd script_WMSMC.sh 100 34
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_9.0_neu/
+qsub -cwd script_WMSMC.sh 100 35
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_9.5_neu/
+qsub -cwd script_WMSMC.sh 100 36
+cd ../RESULTS_SLIM_BOpinslim3INPUT100Mb_N1000_c10_10.0_neu/
+qsub -cwd script_WMSMC.sh 100 37
+
