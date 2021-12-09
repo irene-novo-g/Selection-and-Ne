@@ -1,0 +1,33 @@
+// Keywords: 
+
+// set up a simple neutral simulation
+initialize()
+{
+	// set the overall mutation rate
+	initializeMutationRate(1e-8);
+	
+	// m1 / m2 mutation type: neutral / deleterious
+	initializeMutationType("m1", 0.0, "f", 0.0);
+	initializeMutationType("m2", 0.5, "g", -0.02, 0.2);
+	
+	// g1 genomic element type: uses m1 or m2 for mutations
+	initializeGenomicElementType("g1", c(m1,m2), c(0.95,0.05));
+	
+	// uniform chromosome of length 100 Mb
+	initializeGenomicElement(g1, 0, 99999999);
+	
+	// variable recombination along the chromosome
+	initializeRecombinationRate(c(2.5e-8,10.0e-8,0.5e-8,3.0e-8,10.0e-8,1.5e-8,1.5e-8,3.5e-8,4.0e-8,3.0e-8,2.5e-8,1.5e-8,4.0e-8,1.0e-8,1.0e-8,2.5e-8,3.0e-8,2.5e-8,4.5e-8,3.5e-8,1.0e-8,4.0e-8,1.0e-8,2.0e-8,2.0e-8,1.5e-8,1.5e-8,1.5e-8,4.5e-8,4.0e-8,1.0e-8,4.0e-8,10.0e-8,5.0e-8,4.5e-8,4.5e-8,1.0e-8,2.5e-8,2.5e-8,1.0e-8,4.5e-8,3.5e-8,1.0e-8,3.0e-8,3.0e-8,2.0e-8,1.5e-8,3.0e-8,3.5e-8,10.0e-8,1.0e-8,2.0e-8,1.0e-8,0.5e-8,3.0e-8,3.0e-8,1.0e-8,0.5e-8,2.5e-8,3.0e-8,3.0e-8,4.5e-8,3.5e-8,10.0e-8,1.0e-8,4.0e-8,1.0e-8,1.5e-8,4.0e-8,2.5e-8), c(1428570,2857141,4285712,5714283,7142854,8571425,9999996,11428567,12857138,14285709,15714280,17142851,18571422,19999993,21428564,22857135,24285706,25714277,27142848,28571419,29999990, 31428561,32857132,34285703,35714274,37142848,38571416,39999987,41428558,42857129,44285700,45714271,47142842,48571413,49999984,51428555,52857126,54285697,55714268,57142839,58571410,59999981,61428552,62857123,64285694,65714265,67142836,68571407,69999978,71428549,72857120,74285691,75714262,77142833,78571404,79999975,81428546,82857117,84285688,85714259,87142830,88571401,89999972,91428543,92857114,94285685,95714256,97142827,98571398,99999999));
+}
+
+// create a population of 1000 individuals and bottleneck
+1 { sim.addSubpop("p1", 1000); }
+9970 { p1.setSubpopulationSize(100); }
+9991 { p1.setSubpopulationSize(1000); }
+
+// run to generation 10000
+10000
+{
+	sim.outputFull();
+	//sim.simulationFinished();
+}

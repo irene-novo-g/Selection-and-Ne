@@ -1,0 +1,75 @@
+
+# BS
+cd RESULTS_SLIM_slim3INPUT100Mb_N1000_botmed_BS
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 1
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_botrec_BS
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 2
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_fix_BS
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 3
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to100_droprec_BS
+qsub -l h=compute-0-7 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 4
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to10000_exponrec_BS
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 5
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_exponmed_BS
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 6
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_fix_BS
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 7
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000to1000_dropmed_BS
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 8
+
+# BS RR
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_botmed_BS_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 11
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_botrec_BS_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 12
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_fix_BS_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 13
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to100_droprec_BS_RR
+qsub -l h=compute-0-7 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 14
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to10000_exponrec_BS_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 95
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_exponmed_BS_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 16
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_fix_BS_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 17
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000to1000_dropmed_BS_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 18
+
+# HH
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_botmed_HH
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 21
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_botrec_HH
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 22
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_fix_HH
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 23
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to100_droprec_HH
+qsub -l h=compute-0-7 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 24
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to10000_exponrec_HH
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 25
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_exponmed_HH
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 26
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_fix_HH
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 27
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000to1000_dropmed_HH
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 28
+
+# HH RR
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_botmed_HH_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 31
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_botrec_HH_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 32
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000_fix_HH_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 33
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to100_droprec_HH_RR
+qsub -l h=compute-0-7 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 34
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N1000to10000_exponrec_HH_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 35
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_exponmed_HH_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 36
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000_fix_HH_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 37
+cd ../RESULTS_SLIM_slim3INPUT100Mb_N10000to1000_dropmed_HH_RR
+qsub -l h=compute-0-9 script_WRELATE_DORELATE_nomonomorphic.sh 100 100 38
+
+
+
